@@ -1,8 +1,8 @@
 import random
 
 
-def dice():
-    return random.randint(1, 6)
+def dice(min, max):
+    return random.randint(min, max)
 
 
-print(dice())
+print(dice(1, 6))
