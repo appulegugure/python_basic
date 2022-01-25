@@ -7,9 +7,9 @@ def dice(men_l):
 
 men = int(input("サイコロの面の数は？"))
 nankai = int(input("何回振りますか？"))
-result_containor = []
+result_container = []
 
 for i in range(nankai):
-    result_containor.append(dice(men))
+    result_container.append(dice(men))
 
-print(result_containor)
+print(result_container)
