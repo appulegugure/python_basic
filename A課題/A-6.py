@@ -1,3 +1,1 @@
-odd_numbers = [1, 3, 5, 7, 9]
-
-print('\n'.join([str(number) for number in odd_numbers]))
+print('\n'.join([str(number) for number in [i for i in range(1, 10) if not i % 2 == 0]]))
