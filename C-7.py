@@ -24,17 +24,17 @@ class Customer:
         return '\t'.join([self.fullname, str(self.age), str(self.entry_tree)])
 
 
-t = Customer("Tom", "Ford", 3)
-print(t.entry_tree)
+t = Customer("Tom", "Ford", 45)
+print(t.info_csv())
 
-p = Customer("Ken", "Tanaka", 4)
-print(p.entry_tree)
+p = Customer("Ken", "Tanaka", 35)
+print(p.info_csv())
 
-z = Customer("Kezi", "Tanaka", 74)
-print(z.entry_tree)
+z = Customer("Kezi", "Tanaka", 35)
+print(z.info_csv())
 
-q = Customer("Kezi", "Tanakao", 75)
-print(q.entry_tree)
+q = Customer("Kezi", "Tanakao", 35)
+print(q.info_csv())
 
 w = Customer("Ieyasu", "Tokugawa", 12)
-print(w.entry_tree)
+print((w.info_csv()))
