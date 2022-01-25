@@ -19,7 +19,7 @@ def main():
     print(f"Q1.平均気温:{sum(zenkoku_kion) / len(zenkoku_kion)}")
     # Q2. 大阪府のすべての駅名をカンマ区切りで出力してください( '梅田,大阪,堺' となればOK)
     oosaka_eki = [i["station"] for i in weather_information if i["prefecture"] == '大阪府']
-    print(f"Q2.大阪駅名:{','.join(oosaka_eki)}")
+    print(f"Q2.大阪駅名:\'{','.join(oosaka_eki)}\'")
 
     # Q3. 福岡県の平均気温を計算してください(14.0となればOK)
     hukuoka_kion = [i["temperature"] for i in weather_information if i["prefecture"] == '福岡県']
