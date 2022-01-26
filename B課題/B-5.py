@@ -25,11 +25,9 @@ def original_min(list):
 
 def original_ave(list):
     result = 0
-    count = 0
     for i in list:
         result += i
-        count += 1
-    return int(result / count)
+    return int(result / (len(list) + 1))
 
 
 if __name__ == '__main__':
